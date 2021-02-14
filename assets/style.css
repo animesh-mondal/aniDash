@@ -1,0 +1,40 @@
+body{
+    background-color: #4e3d53;
+    font-family: 'Roboto';
+}
+.card-ani{
+    text-align: center;
+    margin: 5px 10px;
+    background-color: #a6f0c6;
+    font-weight: bold;
+    font-family: 'Nunito';
+    
+}
+
+.header{
+    background-color: #d9dab0;
+    font-family: 'Pacifico';
+    font-weight: bold;
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.footer{
+    color: white;
+    text-align: center;
+    background-color: dimgray;
+    padding: 5px;
+    margin: auto;
+}
+
+.error{
+    color: white;
+    text-align: center;
+    margin: 100px auto;
+    width: 80%;
+}
+
+
