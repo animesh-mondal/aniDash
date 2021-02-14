@@ -8,13 +8,15 @@ from components.controls import navbar, footer
 
 dropOptions = [{'label': i, 'value': i} for i in sale['City'].unique()]
 dropOptions.append({'label': 'All City', 'value': 'All City'}.copy())
+brand = ['All Brand','Wow! Momo', 'Wow! China','Combo']
+dropOptionsBrand = [{'label': i, 'value': i} for i in brand]
 
 homePage = html.Div([
             navbar,
             dbc.Row(
                 dbc.Col(
-                    html.H1("Welcome to the Wow! Dashboard", className="header text-center")
-                )
+                    html.H1("Welcome to the Wow! Dashboard", className="header text-center"),
+                ),
             ),
             dbc.Container([
                 dbc.Row([ 
@@ -23,6 +25,14 @@ homePage = html.Div([
                             id="dropD1",
                             options= dropOptions,
                             value="All City",
+                            clearable=False,
+                        )
+                    ],className="col-3"),
+                    dbc.Col([
+                        dcc.Dropdown(
+                            id="dropDBrand",
+                            options= dropOptionsBrand,
+                            value="All Brand",
                             clearable=False
                         )
                     ],className="col-3"),
@@ -36,7 +46,7 @@ homePage = html.Div([
                                 end_date=date.today() - timedelta(days=1),
                                 className= "m-3"
                             ),
-                    ]),
+                    ],className= "col-4" ),
                     dbc.Col(
                         dbc.Button(children="Submit", id="submit-btn", n_clicks=0, className="btn btn-info")
                     ),
