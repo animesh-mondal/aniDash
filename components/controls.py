@@ -8,8 +8,8 @@ navbar = dbc.NavbarSimple(
                 dbc.DropdownMenu(
                     children=[
                         dbc.DropdownMenuItem("Sales Analysis", header=True),
-                        dbc.DropdownMenuItem("M-O-M", href="#"),
-                        dbc.DropdownMenuItem("SSSG", href="#"),
+                        dbc.DropdownMenuItem("M-O-M", href="/mom"),
+                        dbc.DropdownMenuItem("SSSG", href="/sssg"),
                     ],
                     nav=True,
                     in_navbar=True,
@@ -18,8 +18,8 @@ navbar = dbc.NavbarSimple(
                 dbc.DropdownMenu(
                     children=[
                         dbc.DropdownMenuItem("Reports", header=True),
-                        dbc.DropdownMenuItem("Day Wise Sales", href="#"),
-                        dbc.DropdownMenuItem("Item Wise Sales", href="#"),
+                        dbc.DropdownMenuItem("Day Wise Sales", href="/dws"),
+                        dbc.DropdownMenuItem("Item Wise Sales", href="/iws"),
                     ],
                     nav=True,
                     in_navbar=True,
